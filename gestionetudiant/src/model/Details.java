@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class Details {
     private String annee;
-    private List<String> modules=new ArrayList();
+    private List<String> modules;
     //ManytoOne
     private Classe classe;
     private Professeur professeur;
@@ -22,10 +22,17 @@ public class Details {
     public Details(String annee) {
         this.annee = annee;
     }
-
+    
     public Details() {
     }
 
+    public Details(String annee, List<String> modules, Classe classe, Professeur professeur) {
+        this.annee = annee;
+        this.modules = modules;
+        this.classe = classe;
+        this.professeur = professeur;
+    }
+    
     public String getAnnee() {
         return annee;
     }

@@ -12,6 +12,10 @@ package model;
 public abstract class Personne {
     protected int id;
     protected String nomComplet;
+    protected String type;
+    protected String login;
+    protected String mdp;
+    
 
     public Personne() {
     }
@@ -25,8 +29,37 @@ public abstract class Personne {
         this.nomComplet = nomComplet;
     }
 
-   
+    public Personne(String login, String mdp) {
+        this.login = login;
+        this.mdp = mdp;
+    }
 
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getMdp() {
+        return mdp;
+    }
+
+    public void setMdp(String mdp) {
+        this.mdp = mdp;
+    }
+    
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+   
+    
     public int getId() {
         return id;
     }

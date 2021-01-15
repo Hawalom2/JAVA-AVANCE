@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+
 /**
  *
  * @author user
@@ -20,7 +21,8 @@ public class Exercice2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-         List<String> lPersonne=new ArrayList();
+       
+         
          
     }
     

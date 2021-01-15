@@ -15,20 +15,32 @@ import java.util.List;
 public class Professeur extends Personne {
    private String grade;
    private List<String> modules=new ArrayList();
+   private String matricule;
 
    public Professeur() {
+       type="Professeur";
     }
 
     public Professeur(String grade, int id, String nomComplet) {
         super(id, nomComplet);
         this.grade = grade;
+        type="Professeur";
     }
 
     public Professeur(String grade, String nomComplet) {
         super(nomComplet);
         this.grade = grade;
+        type="Professeur";
     }
 
+    public String getMatricule() {
+        return matricule;
+    }
+
+    public void setMatricule(String matricule) {
+        this.matricule = matricule;
+    }
+    
     public String getGrade() {
         return grade;
     }

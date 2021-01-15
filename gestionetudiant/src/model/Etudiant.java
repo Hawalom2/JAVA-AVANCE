@@ -15,17 +15,21 @@ public class Etudiant extends Personne{
     private Classe cl;
     
     //default
-    public Etudiant() {    
+    public Etudiant() {   
+        super();
+        type="Etudiant";
     }
     //surcharge
     public Etudiant(String tuteur, int id, String nomComplet) {
         super(id, nomComplet);
         this.tuteur = tuteur;
+        type="Etudiant";
     }
     //select
     public Etudiant(String tuteur, String nomComplet) {
         super(nomComplet);
         this.tuteur = tuteur;
+        type="Etudiant";
     }
     
     public String getTuteur() {
