@@ -17,6 +17,10 @@ public class Classe {
     //default
     public Classe() {
     }
+    //findbyclasse
+    public Classe(int id) {
+        this.id = id;
+    }
     
     //surcharge
     

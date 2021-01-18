@@ -19,7 +19,7 @@ public class Gestionetudiant extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("vconnexion.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("vclasse.fxml"));
         
         Scene scene = new Scene(root);
         
