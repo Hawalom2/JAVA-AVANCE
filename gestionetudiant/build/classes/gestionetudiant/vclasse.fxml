@@ -25,11 +25,11 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <TableView editable="true" layoutX="4.0" layoutY="43.0" prefHeight="283.0" prefWidth="346.0" style="-fx-background-color: #fce2aa;">
+                  <TableView fx:id="tblvClasse" editable="true" layoutX="4.0" layoutY="43.0" onMouseClicked="#handleShowEtudiant" prefHeight="283.0" prefWidth="346.0" style="-fx-background-color: #fce2aa;">
                      <columns>
-                        <TableColumn prefWidth="75.0" text="id" />
-                        <TableColumn prefWidth="172.0" text="libelle" />
-                        <TableColumn prefWidth="113.0" text="nbre" />
+                        <TableColumn fx:id="tblcId" prefWidth="75.0" text="id" />
+                        <TableColumn fx:id="tblcLibelle" prefWidth="172.0" text="libelle" />
+                        <TableColumn fx:id="tblcNbre" prefWidth="113.0" text="nbre" />
                      </columns>
                      <cursor>
                         <Cursor fx:constant="DEFAULT" />
@@ -48,11 +48,11 @@
                         <Font size="20.0" />
                      </font>
                   </Text>
-                  <TableView editable="true" layoutX="4.0" layoutY="43.0" prefHeight="283.0" prefWidth="383.0" style="-fx-background-color: #fce2aa;">
+                  <TableView fx:id="tblvEtudiant" editable="true" layoutX="4.0" layoutY="43.0" prefHeight="283.0" prefWidth="383.0" style="-fx-background-color: #fce2aa;">
                      <columns>
-                        <TableColumn prefWidth="75.0" text="id" />
-                        <TableColumn prefWidth="172.0" text="Nom Complet" />
-                        <TableColumn prefWidth="113.0" text="Tuteur" />
+                        <TableColumn fx:id="tblcEtuId" prefWidth="75.0" text="id" />
+                        <TableColumn fx:id="tblcNomComplet" prefWidth="172.0" text="Nom Complet" />
+                        <TableColumn fx:id="tblcTuteur" prefWidth="113.0" text="Tuteur" />
                      </columns>
                      <cursor>
                         <Cursor fx:constant="DEFAULT" />
@@ -69,8 +69,8 @@
                   <Font name="Garamond" size="24.0" />
                </font>
             </Text>
-            <TextField layoutX="170.0" layoutY="50.0" />
-            <TextField layoutX="455.0" layoutY="48.0" prefHeight="27.0" prefWidth="149.0" />
+            <TextField fx:id="txtLibelle" layoutX="170.0" layoutY="50.0" />
+            <TextField fx:id="txtNbre" layoutX="455.0" layoutY="48.0" prefHeight="27.0" prefWidth="149.0" />
          </children>
       </Pane>
       <Label layoutX="94.0" layoutY="59.0" prefHeight="43.0" prefWidth="95.0" text="Libelle" textAlignment="CENTER">
@@ -101,7 +101,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Button fx:id="handleCreerClasse" layoutX="657.0" layoutY="66.0" mnemonicParsing="false" text="ADD">
+      <Button fx:id="handleCreerClasse" layoutX="657.0" layoutY="66.0" mnemonicParsing="false" onAction="#handleCreerClasse" text="Ajouter">
          <font>
             <Font name="Bodoni MT Black" size="13.0" />
          </font>
